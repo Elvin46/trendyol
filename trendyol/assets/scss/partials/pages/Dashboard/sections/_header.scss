@@ -56,10 +56,13 @@
     }
 }
 @media only screen and (max-width:899px){
-    .navbar-bottom-part{
-        margin: 10px 0;
-        width: 100%;
+    .navbar-bottom-pg2{
+        .navbar-bottom-part{
+            margin: 10px 0;
+            width: 100%;
+        }
     }
+    
 }
 @media only screen and (min-width:899px){
     .navbar-bottom-pg2{
