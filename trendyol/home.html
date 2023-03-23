@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b69767605.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg  navbar-middle">
+            <div class="container-fluid">
+                <div class="navbar-middle-part">
+                    <a class="navbar-brand main-logo" href="#">trendyol</a>
+                    <ul class="nav-menu">
+                        <li class="sub-menu-btn">
+                            <a class=" navbar-link d-flex align-items-center"> 
+                                Urun
+                                <svg class="dropdown-icon" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.99999C3.41629 4.99999 3.3351 4.9809 3.25641 4.94274C3.17773 4.90457 3.11244 4.85368 3.06054 4.79006L0.172645 1.27862C0.0575483 1.13867 0 0.960557 0 0.744273C0 0.527988 0.0575483 0.349872 0.172645 0.209923C0.287743 0.0699741 0.43423 0 0.612108 0C0.789985 0 0.936472 0.0699741 1.05157 0.209923L3.5 3.18702L5.94843 0.209923C6.06353 0.0699741 6.21001 0 6.38789 0C6.56577 0 6.71226 0.0699741 6.82735 0.209923C6.94245 0.349872 7 0.527988 7 0.744273C7 0.960557 6.94245 1.13867 6.82735 1.27862L3.93946 4.79006C3.87668 4.8664 3.80867 4.9206 3.73543 4.95266C3.66218 4.98472 3.58371 5.0005 3.5 4.99999Z" fill="#8E99AD"/>
+                                </svg>
+                                
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Urun Listesi</a></li>
+                                <li><a href="">Urun Sorulari</a></li>
+                                <li><a href="">Gorsel Galerisi</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a class="navbar-link d-flex align-items-center"> 
+                                Siparis & Kargo
+                                <svg class="dropdown-icon" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.99999C3.41629 4.99999 3.3351 4.9809 3.25641 4.94274C3.17773 4.90457 3.11244 4.85368 3.06054 4.79006L0.172645 1.27862C0.0575483 1.13867 0 0.960557 0 0.744273C0 0.527988 0.0575483 0.349872 0.172645 0.209923C0.287743 0.0699741 0.43423 0 0.612108 0C0.789985 0 0.936472 0.0699741 1.05157 0.209923L3.5 3.18702L5.94843 0.209923C6.06353 0.0699741 6.21001 0 6.38789 0C6.56577 0 6.71226 0.0699741 6.82735 0.209923C6.94245 0.349872 7 0.527988 7 0.744273C7 0.960557 6.94245 1.13867 6.82735 1.27862L3.93946 4.79006C3.87668 4.8664 3.80867 4.9206 3.73543 4.95266C3.66218 4.98472 3.58371 5.0005 3.5 4.99999Z" fill="#8E99AD"/>
+                                </svg>                         
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Kargo Aşamasındakiler</a></li>
+                                <li><a href="">İptal Edilenler</a></li>
+                                <li><a href="">İade İşlemleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a class="navbar-link d-flex align-items-center" > 
+                                Finans
+                                <svg class="dropdown-icon" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.99999C3.41629 4.99999 3.3351 4.9809 3.25641 4.94274C3.17773 4.90457 3.11244 4.85368 3.06054 4.79006L0.172645 1.27862C0.0575483 1.13867 0 0.960557 0 0.744273C0 0.527988 0.0575483 0.349872 0.172645 0.209923C0.287743 0.0699741 0.43423 0 0.612108 0C0.789985 0 0.936472 0.0699741 1.05157 0.209923L3.5 3.18702L5.94843 0.209923C6.06353 0.0699741 6.21001 0 6.38789 0C6.56577 0 6.71226 0.0699741 6.82735 0.209923C6.94245 0.349872 7 0.527988 7 0.744273C7 0.960557 6.94245 1.13867 6.82735 1.27862L3.93946 4.79006C3.87668 4.8664 3.80867 4.9206 3.73543 4.95266C3.66218 4.98472 3.58371 5.0005 3.5 4.99999Z" fill="#8E99AD"/>
+                                </svg>                         
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Ödemeler</a></li>
+                                <li><a href="">Fatura Listeleme</a></li>
+                                <li><a href="">Ödeme Geçmişi</a></li>
+                                <li><a href="">Sipariş Kayıtları</a></li>
+                                <li><a href="">Cari Hesap Ekstresi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-link d-flex align-items-center" href="#"> 
+                                Promosyon & Fiyat
+                            </a>
+                        </li>
+                        <li class="sub-menu-btn">
+                            <a class="navbar-link d-flex align-items-center"> 
+                                Raporlar
+                                <svg class="dropdown-icon" width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 4.99999C3.41629 4.99999 3.3351 4.9809 3.25641 4.94274C3.17773 4.90457 3.11244 4.85368 3.06054 4.79006L0.172645 1.27862C0.0575483 1.13867 0 0.960557 0 0.744273C0 0.527988 0.0575483 0.349872 0.172645 0.209923C0.287743 0.0699741 0.43423 0 0.612108 0C0.789985 0 0.936472 0.0699741 1.05157 0.209923L3.5 3.18702L5.94843 0.209923C6.06353 0.0699741 6.21001 0 6.38789 0C6.56577 0 6.71226 0.0699741 6.82735 0.209923C6.94245 0.349872 7 0.527988 7 0.744273C7 0.960557 6.94245 1.13867 6.82735 1.27862L3.93946 4.79006C3.87668 4.8664 3.80867 4.9206 3.73543 4.95266C3.66218 4.98472 3.58371 5.0005 3.5 4.99999Z" fill="#8E99AD"/>
+                                </svg>                         
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Canlı Performans</a></li>
+                                <li><a href="">Genel Performans</a></li>
+                                <li><a href="">Ürün Performans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-link d-flex align-items-center" href="#"> 
+                                Magaza Yonetimi
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link d-flex align-items-center" href="#"> 
+                                Reklam Yonetimi
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navbar-link d-flex align-items-center" href="#"> 
+                                Gelisim Merkezi
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="navbar-middle-part">
+                    
+                    <a class="navbar-search " href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.78922 15.3807C9.65482 15.3807 10.512 15.2102 11.3117 14.879C12.1114 14.5477 12.838 14.0622 13.4501 13.4501C14.0622 12.838 14.5477 12.1114 14.879 11.3117C15.2102 10.5119 15.3807 9.65481 15.3807 8.78921C15.3807 7.9236 15.2102 7.06647 14.879 6.26675C14.5477 5.46704 14.0622 4.7404 13.4501 4.12832C12.838 3.51624 12.1114 3.03072 11.3117 2.69946C10.512 2.36821 9.65482 2.19772 8.78922 2.19772C7.04104 2.19772 5.36447 2.89218 4.12832 4.12832C2.89218 5.36446 2.19772 7.04104 2.19772 8.78921C2.19772 10.5374 2.89218 12.214 4.12832 13.4501C5.36447 14.6862 7.04104 15.3807 8.78922 15.3807ZM15.7323 14.1789L19.6652 18.1118C19.77 18.2132 19.8536 18.3345 19.9111 18.4685C19.9686 18.6026 19.9988 18.7468 20 18.8927C20.0011 19.0385 19.9732 19.1832 19.9179 19.3181C19.8626 19.4531 19.7809 19.5757 19.6777 19.6788C19.5745 19.7819 19.4517 19.8633 19.3167 19.9185C19.1817 19.9736 19.037 20.0013 18.8911 20C18.7452 19.9986 18.6011 19.9682 18.4671 19.9105C18.3331 19.8528 18.212 19.7691 18.1107 19.6641L14.1778 15.7311C12.4117 17.102 10.1897 17.7483 7.96391 17.5385C5.73814 17.3287 3.67598 16.2786 2.19723 14.6019C0.718473 12.9252 -0.0657085 10.7479 0.00431635 8.51338C0.0743412 6.27884 0.993308 4.15497 2.57414 2.57414C4.15498 0.993307 6.27885 0.0743411 8.51339 0.00431635C10.7479 -0.0657084 12.9252 0.718472 14.6019 2.19722C16.2786 3.67597 17.3287 5.73813 17.5385 7.9639C17.7483 10.1897 17.102 12.4117 15.7312 14.1778L15.7323 14.1789Z" fill="#95A1B5"/>
+                        </svg>
+                                                   
+                    </a>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <div class="sidebar">
+                    <div class="menu">
+                        <div class="item">
+                            <a class="sub-btn">Urun<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="sub-menu">
+                                <a class="sub-item" href="">Urun Listesi</a>
+                                <a class="sub-item" href="">Urun Sorulari</a>
+                                <a class="sub-item" href="">Gorsel Galerisi</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="sub-btn" >Siparis & Kargo<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="sub-menu">
+                                <a class="sub-item" href="">Kargo Aşamasındakiler</a>
+                                <a class="sub-item" href="">İptal Edilenler</a>
+                                <a class="sub-item" href="">İade İşlemleri</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="sub-btn">Finans<i class="fas fa-angle-right dropdown"></i></a>
+                            <div class="sub-menu">
+                                <a class="sub-item" href="">Ödemeler</a>
+                                <a class="sub-item" href="">Fatura Listeleme</a>
+                                <a class="sub-item" href="">Ödeme Geçmişi</a>
+                                <a class="sub-item" href="">Sipariş Kayıtları</a>
+                                <a class="sub-item" href="">Cari Hesap Ekstresi</a>
+
+                            </div>
+                        </div>
+                        <div class="item"><a href="">Magaza Yonetimi</a></div>
+                        <div class="item"><a href="">Reklam Yonetimi</a></div>
+                        <div class="item"><a href="">Gelisim Merkezi</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="banner">
+            <div class="banner-main">
+                <div class="warning-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                </div>
+                <div class="banner-text">
+                    <h3>Trendyol tarafında eksik izinleriniz bulunmaktadır.</h3>
+                </div>
+                <button>İZİNLERİ TAMAMLA</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="headline">
+            <div class="container-fluid p-3">
+                <div class="row m-0 align-items-center">
+                    <div class="col-lg-4 col-md-12 p-0 mb-3 profile">
+                        <img src="./assets/images/white-color-solid-background-1920x1080.png" alt="">
+                        <div class="title">
+                            <h5>Moda Vitrini <span>(ID 151705)</span></h5>
+                            <a href="#">Satici Puani: <span>8.7/10</span><i class="fas fa-angle-right dropdown"></i></a>
+                        </div>
+                    
+                    </div>
+                    <div class="col-lg-7 col-md-11 mb-3 p-0">
+                        <div class="headline-dash row m-0">
+                            <div class="dash-item dash-item_left col-md-4 d-flex align-items-center justify-content-between  p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-dash-item">
+                                        <svg  data-v-fa11b592="" data-v-7712cda8="" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-05e3a70c=""><mask data-v-fa11b592="" id="mask0_4270_18251" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32" style="mask-type: alpha;"><path data-v-fa11b592="" fill-rule="evenodd" clip-rule="evenodd" d="M16 4.11823C9.37258 4.11823 4 9.64962 4 16.4729C4 21.7384 7.20026 26.2395 11.7145 28.0171C12.7462 28.4233 13.2626 29.6137 12.868 30.6759C12.4734 31.7381 11.3172 32.2698 10.2855 31.8636C4.27425 29.4965 0 23.5012 0 16.4729C0 7.37519 7.16344 0 16 0C24.8366 0 32 7.37519 32 16.4729C32 23.5012 27.7257 29.4965 21.7145 31.8636C20.6828 32.2698 19.5266 31.7381 19.132 30.6759C18.7374 29.6137 19.2539 28.4233 20.2855 28.0171C24.7997 26.2395 28 21.7384 28 16.4729C28 9.64962 22.6274 4.11823 16 4.11823Z" fill="#FFB600"></path></mask><g data-v-fa11b592="" mask="url(#mask0_4270_18251)"><path data-v-fa11b592="" d="M16 -0.000488281H32V15.9995H16V-0.000488281Z" fill="#F27A1A"></path><path data-v-fa11b592="" d="M0 0H16V16H0V0Z" fill="#FFB600"></path><path data-v-fa11b592="" d="M16 17.3334L32 12V31.9999H16V17.3334Z" fill="#FF5043"></path><path data-v-fa11b592="" d="M0 12.3076L16 17.3337V31.9999H0V12.3076Z" fill="#0BC15C"></path></g></svg>
+    
+                                    </div>
+                                    <div class="title">
+                                        <h5 style="width: 150px;">Operasyon Durumu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></h5>
+                                        <h4 class="text-green">Normal</h4>
+                                    </div>
+                                </div>
+                                <a href="#"><i class="fas fa-angle-right dropdown"></i></a>
+                            </div>
+                            <div class="dash-item dash-item_mid col-md-4 d-flex align-items-center justify-content-between  p-0">
+                                <div class="d-flex align-items-center">
+                                    
+                                    <div class="title">
+                                        <h5>Güncel Termin Süresi:</h5>
+                                        <h4>Bugün Kargolanması Gerekenler</h4>
+                                    </div>
+                                    <svg class="information-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                                </div>
+                                <h5>
+                                    <a href="#">2 gun</a>
+                                    <p>2 Siparis</p>
+                                </h5>
+                            </div>
+                            <div class="dash-item dash-item_right col-md-4 d-flex align-items-center justify-content-between  p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-dash-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                                    </div>
+                                    <div class="title">
+                                        <h5>Ihlal Puani: </h5>
+                                        <h4 class="text-yellow">Az Riskli</h4>
+                                    </div>
+                                </div>
+                                <a href="#"><span>4 Puan</span><i class="fas fa-angle-right dropdown"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0" style="width: 56px;">
+                        <div class="help-part">
+                            <button>?</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main">
+            <div class="container-fluid">
+                <div class="row m-0">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="main-part finance col-12 row m-0 mb-3">
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <h3>Satış Performansım</h3>
+                                <a class="text-orange" href="#">
+                                    <img width="16px" src="https://cdn.dsmcdn.com/seller-center/dashboard/images/live-monitor.gif" alt="">
+                                    Canlı Performansım
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="finance-part">
+                                    <div class="finance-left-part d-flex flex-column">
+                                        <h5>Bugünkü Satışım</h5>
+                                        <h4>0 TL</h4>
+                                    </div>
+                                    <div class="finance-right-part">
+                                        <h5>%0 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="finance-part">
+                                    <div class="finance-left-part d-flex flex-column">
+                                        <h5>Son 7 Günlük Satışım</h5>
+                                        <h4>19.424 TL</h4>
+                                    </div>
+                                    <div class="finance-right-part">
+                                        <h5 class="text-green"><svg data-v-1eb3709c="" data-v-65391e6c="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-05e3a70c=""><circle data-v-1eb3709c="" cx="8" cy="8" r="8" fill="#DBF6E7"></circle><path data-v-1eb3709c="" fill-rule="evenodd" clip-rule="evenodd" d="M6.713 5h3.817c.26 0 .47.21.47.47v3.817a.47.47 0 1 1-.94 0V6.603l-4.258 4.26a.47.47 0 0 1-.664-.665L9.396 5.94H6.713a.47.47 0 1 1 0-.939z" fill="#0BC15C"></path></svg>%68.99 <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="finance-part">
+                                    <div class="finance-left-part d-flex flex-column">
+                                        <h5>Son 30 Günlük Satışım</h5>
+                                        <h4>50.419 TL</h4>
+                                    </div>
+                                    <div class="finance-right-part">
+                                        <h5 class="text-green"><svg data-v-1eb3709c="" data-v-65391e6c="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-05e3a70c=""><circle data-v-1eb3709c="" cx="8" cy="8" r="8" fill="#DBF6E7"></circle><path data-v-1eb3709c="" fill-rule="evenodd" clip-rule="evenodd" d="M6.713 5h3.817c.26 0 .47.21.47.47v3.817a.47.47 0 1 1-.94 0V6.603l-4.258 4.26a.47.47 0 0 1-.664-.665L9.396 5.94H6.713a.47.47 0 1 1 0-.939z" fill="#0BC15C"></path></svg>%63,94 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="finance-part">
+                                    <div class="finance-left-part d-flex flex-column">
+                                        <h5>Bir Sonraki Alacağım</h5>
+                                        <h4>2.456,9 TL</h4>
+                                    </div>
+                                    <div class="finance-right-part">
+                                        <h5><a href="#">Ödemelerim</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-4">
+                                <div class="advertise d-flex justify-content-between">
+                                    <div class="advertise-left-part">
+                                        <div class="advertise-responsive d-flex">
+                                            <div class="d-flex">
+                                                <img src="https://cdn.dsmcdn.com/seller-center/early-payments/images/early-payment-illustration-green.svg" alt="">
+                                                <h4 style="font-size: 16px;">Avantajlı kesinti oranlarıyla 21.297 TL’nizi Cuma günü alın!</h4>
+                                            </div>
+                                        </div>
+                                        <div class="advertise-responsive advertise-responsive_last d-flex">
+                                            <div class="d-flex">
+                                                <h5>Piyasadaki Diğer Oranlar</h5>
+                                                <h4 style="text-decoration: line-through;">%3</h4>
+                                            </div>
+                                            <div class="d-flex">
+                                                <h5>Trendyol Kesinti Oranı</h5>
+                                                <h4>%2,5</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="advertise-right-part d-flex flex-column align-items-center">
+                                        <a href="#">Erken Ödeme Talep Et</a>
+                                        <h4><svg data-v-bb8d88a6="" data-v-a8bb5a60="" dataName="clock" dataTags="time,watch,alarm" dataType="clock" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="white" stroke="#357EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="g-icon feather feather--clock" data-v-198ae180=""><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>0 Gün 04 Saat</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-part actions col-12 row m-0 mb-3">
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <h3>Aksiyonlar</h3>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-3">
+                                <div class="actions-part">
+                                    <a href="#">
+                                        <h5>Bugunki Siparislerim</h5>
+                                    <h4 class="text-orange">1 Adet <i class="fas fa-angle-right"></i></h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-part shortcuts col-12 row m-0 mb-3">
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <h3>Hizli Erisim</h3>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/products-on-sale.svg" alt="">
+                                <h4> Satıştaki Ürünlerim </h4>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/fast-delivery-operation.svg" alt="">
+                                <h4> Hızlı Teslimat & Operasyon </h4>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/sales-reports.svg" alt="">
+                                <h4> Satış Raporları </h4>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="	https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/video-center.svg" alt="">
+                                <h4> Video Merkezi </h4>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/evaluations.svg" alt="">
+                                <h4> Ürün Değerlendirmeleri Raporu </h4>
+                            </div>
+                            <div class="shortcut-item">
+                                <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/tools/favorite-view.svg" alt="">
+                                <h4> Favori & Görüntüleme Raporu </h4>
+                            </div>
+                            
+                        </div>
+                        <div class="main-part goals col-12 row m-0 mb-3">
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <h3>Hedeflerim</h3>
+                                <a href="#">Tum Hedefleri Gör</a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="goal-part">
+                                    <div class="goal-head d-flex justify-content-between">
+                                        <h4> Tedarik Edememe Nedir? Nasıl Engellenir? Eğitiminizi Tamamla... </h4>
+                                        <h5>0/1</h5>
+                                    </div>
+                                    <h5>Satıcı puanınızı yükseltmek için tedarik edememe metriğinizi iyileştirmelisiniz....</h5>
+                                    <p> Bitiş Tarihi: 05 Nisan 2023 14:18 </p>
+                                    <a href="#">  Detayları Gör  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 row m-0 mb-3">
+                            <div class="suggestions col-md-6 col-sm-12 mb-3">
+                                <div class="main-part">
+                                    <div class="col-12 my-3 d-flex justify-content-between">
+                                        <h3>Büyüme Önerileri</h3>
+                                        <a href="#">Tüm Öneriler</a>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <div class="suggestion-part d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <svg data-v-5e4298a4="" data-v-8dee222c="" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-05e3a70c=""><circle data-v-5e4298a4="" cx="15" cy="15" r="15" fill="#FDF1E7"></circle><path data-v-5e4298a4="" fill-rule="evenodd" clip-rule="evenodd" d="M22 13C22 15.5043 20.6849 17.7015 18.7076 18.9386L18.2969 19.5547C18.1114 19.8329 17.7992 20 17.4648 20H15H12.5352C12.2008 20 11.8886 19.8329 11.7031 19.5547L11.2924 18.9386C9.31511 17.7015 8 15.5043 8 13C8 9.134 11.134 6 15 6C18.866 6 22 9.134 22 13ZM12 22C12 21.4477 12.4477 21 13 21H17C17.5523 21 18 21.4477 18 22C18 22.5523 17.5523 23 17 23C17 23.5523 16.5523 24 16 24H14C13.4477 24 13 23.5523 13 23C12.4477 23 12 22.5523 12 22ZM15.124 8.00772C14.576 7.93922 14.0762 8.32794 14.0077 8.87596C13.9392 9.42398 14.3279 9.92378 14.876 9.99228C15.4073 10.0587 16.2319 10.3081 16.8974 10.8106C17.5301 11.2882 18 11.9709 18 13C18 13.5523 18.4477 14 19 14C19.5523 14 20 13.5523 20 13C20 11.229 19.1366 9.99513 18.1026 9.21442C17.1015 8.4586 15.926 8.10797 15.124 8.00772Z" fill="#F27A1A"></path></svg>
+                                                <h4> Düşük Ziyaret Yüksek Satış </h4>
+                                            </div>
+                                            <a class="text-orange" href="#">15 ürünü incele</a>
+                                        </div>
+                                        <div class="suggestion-part d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <svg data-v-5e4298a4="" data-v-8dee222c="" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-05e3a70c=""><circle data-v-5e4298a4="" cx="15" cy="15" r="15" fill="#FDF1E7"></circle><path data-v-5e4298a4="" fill-rule="evenodd" clip-rule="evenodd" d="M22 13C22 15.5043 20.6849 17.7015 18.7076 18.9386L18.2969 19.5547C18.1114 19.8329 17.7992 20 17.4648 20H15H12.5352C12.2008 20 11.8886 19.8329 11.7031 19.5547L11.2924 18.9386C9.31511 17.7015 8 15.5043 8 13C8 9.134 11.134 6 15 6C18.866 6 22 9.134 22 13ZM12 22C12 21.4477 12.4477 21 13 21H17C17.5523 21 18 21.4477 18 22C18 22.5523 17.5523 23 17 23C17 23.5523 16.5523 24 16 24H14C13.4477 24 13 23.5523 13 23C12.4477 23 12 22.5523 12 22ZM15.124 8.00772C14.576 7.93922 14.0762 8.32794 14.0077 8.87596C13.9392 9.42398 14.3279 9.92378 14.876 9.99228C15.4073 10.0587 16.2319 10.3081 16.8974 10.8106C17.5301 11.2882 18 11.9709 18 13C18 13.5523 18.4477 14 19 14C19.5523 14 20 13.5523 20 13C20 11.229 19.1366 9.99513 18.1026 9.21442C17.1015 8.4586 15.926 8.10797 15.124 8.00772Z" fill="#F27A1A"></path></svg>
+                                                <h4> Satış Adedi Tahminlemesi (DEMO) </h4>
+                                            </div>
+                                            <a class="text-orange" href="#">15 ürünü incele</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trainings col-md-6 col-sm-12 mb-3">
+                                <div class="main-part">
+                                    <div class="col-12 my-3 d-flex justify-content-between">
+                                        <h3>Eğitimler</h3>
+                                        <a href="#">Trendyol Akademi</a>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <div class="training-part d-flex">
+                                            <img src="https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                            <div class="d-flex flex-column ms-3">
+                                                <h4>Video</h4>
+                                                <h5> Kurumsal Fatura Nedir ve Nasıl Kullanılır? </h5>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="reminder col-12 row m-0 mb-3">
+                            <img src="https://cdn.dsmcdn.com/seller-center/dashboard/images/slide-banner/fill-product-properties.png" alt="">
+                            <div class="slide-pagination">
+                                <svg dataName="chevron-left" dataTags="" dataType="chevron-left" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="#f27a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="navigation-button g-icon feather feather--chevron-left" data-v-05e3a70c="">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                                <span  class="slide-pagination-bullet"></span>
+                                <span  class="slide-pagination-bullet"></span>
+                                <span  class="slide-pagination-bullet"></span>
+                                <span  class="slide-pagination-bullet"></span>
+                                <span  class="slide-pagination-bullet active"></span>
+                                <svg dataName="chevron-right" dataTags="" dataType="chevron-right" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="#f27a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="navigation-button g-icon feather feather--chevron-right" data-v-05e3a70c="">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="main-part announcements col-12 row m-0 mb-3">
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <h3>Duyurularım<span class="text-orange">(18)</span></h3>
+                                <a href="#">Tüm Öneriler</a>
+                            </div>
+                            <div class="col-12 announcement-item">
+                                <a href="#" class="d-flex justify-content-between align-items-center" >
+                                    <div class="announcement-icon">
+                                        <svg data-v-e53290fa="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff" data-v-91ca96d4=""><path data-v-e53290fa="" d="M17.5 9.83333H16.5V10.8333V15C16.5 15.3682 16.2015 15.6667 15.8333 15.6667C15.4651 15.6667 15.1667 15.3682 15.1667 15V1.66667C15.1667 1.29848 15.4651 1 15.8333 1C16.2015 1 16.5 1.29848 16.5 1.66667V5.83333V6.83333H17.5C18.3284 6.83333 19 7.50491 19 8.33333C19 9.16176 18.3284 9.83333 17.5 9.83333ZM4.64725 13.1372L4.48647 12.3333H3.66667H2.49877C1.67098 12.3333 1 11.6624 1 10.8333V6.66667C1 5.8376 1.67098 5.16667 2.49877 5.16667H7.91667C9.33725 5.16667 10.5262 4.92949 11.5 4.588V12.7191C10.7201 12.536 9.7947 12.3968 8.71291 12.3502L7.43927 12.2954L7.68928 13.5454L8.62071 18.2026C8.70322 18.6151 8.38769 19 7.96699 19H6.36634C6.04855 19 5.77494 18.7757 5.71262 18.4641L4.64725 13.1372Z" fill="#fff" stroke="#fff" stroke-width="2"></path></svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Genel</h5>
+                                            <h5> 23.03.2023 17:01 </h5>
+                                        </div>
+                                        <p>🚚Ürünlerinizi “Hızlı Teslimat” ve “Bugün Kargoda” Seçeneği ile Ön Plana Çıkarın</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col-12 announcement-item">
+                                <a href="#" class="d-flex justify-content-between align-items-center" >
+                                    <div class="announcement-icon">
+                                        <svg data-v-e53290fa="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff" data-v-91ca96d4=""><path data-v-e53290fa="" d="M17.5 9.83333H16.5V10.8333V15C16.5 15.3682 16.2015 15.6667 15.8333 15.6667C15.4651 15.6667 15.1667 15.3682 15.1667 15V1.66667C15.1667 1.29848 15.4651 1 15.8333 1C16.2015 1 16.5 1.29848 16.5 1.66667V5.83333V6.83333H17.5C18.3284 6.83333 19 7.50491 19 8.33333C19 9.16176 18.3284 9.83333 17.5 9.83333ZM4.64725 13.1372L4.48647 12.3333H3.66667H2.49877C1.67098 12.3333 1 11.6624 1 10.8333V6.66667C1 5.8376 1.67098 5.16667 2.49877 5.16667H7.91667C9.33725 5.16667 10.5262 4.92949 11.5 4.588V12.7191C10.7201 12.536 9.7947 12.3968 8.71291 12.3502L7.43927 12.2954L7.68928 13.5454L8.62071 18.2026C8.70322 18.6151 8.38769 19 7.96699 19H6.36634C6.04855 19 5.77494 18.7757 5.71262 18.4641L4.64725 13.1372Z" fill="#fff" stroke="#fff" stroke-width="2"></path></svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Genel</h5>
+                                            <h5> 23.03.2023 17:01 </h5>
+                                        </div>
+                                        <p>🚚Ürünlerinizi “Hızlı Teslimat” ve “Bugün Kargoda” Seçeneği ile Ön Plana Çıkarın</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col-12 announcement-item">
+                                <a href="#" class="d-flex justify-content-between align-items-center" >
+                                    <div class="announcement-icon">
+                                        <svg data-v-e53290fa="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff" data-v-91ca96d4=""><path data-v-e53290fa="" d="M17.5 9.83333H16.5V10.8333V15C16.5 15.3682 16.2015 15.6667 15.8333 15.6667C15.4651 15.6667 15.1667 15.3682 15.1667 15V1.66667C15.1667 1.29848 15.4651 1 15.8333 1C16.2015 1 16.5 1.29848 16.5 1.66667V5.83333V6.83333H17.5C18.3284 6.83333 19 7.50491 19 8.33333C19 9.16176 18.3284 9.83333 17.5 9.83333ZM4.64725 13.1372L4.48647 12.3333H3.66667H2.49877C1.67098 12.3333 1 11.6624 1 10.8333V6.66667C1 5.8376 1.67098 5.16667 2.49877 5.16667H7.91667C9.33725 5.16667 10.5262 4.92949 11.5 4.588V12.7191C10.7201 12.536 9.7947 12.3968 8.71291 12.3502L7.43927 12.2954L7.68928 13.5454L8.62071 18.2026C8.70322 18.6151 8.38769 19 7.96699 19H6.36634C6.04855 19 5.77494 18.7757 5.71262 18.4641L4.64725 13.1372Z" fill="#fff" stroke="#fff" stroke-width="2"></path></svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <h5>Genel</h5>
+                                            <h5> 23.03.2023 17:01 </h5>
+                                        </div>
+                                        <p>🚚Ürünlerinizi “Hızlı Teslimat” ve “Bugün Kargoda” Seçeneği ile Ön Plana Çıkarın</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="main-part offers col-12 row m-0 mb-4 pt-0 px-0">
+                            <div class="offers-heading col-12 d-flex justify-content-between">
+                                <h3>Kampanyalar</h3>
+                                <a href="#">
+                                    Tum Kampanyalar
+                                </a>
+                            </div>
+                            <div class="col-lg-2 my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  my-3 col-md-3 col-sm-6 d-flex flex-column">
+                                <div class="offer-item d-flex flex-column">
+                                    <img src="	https://cdn.dsmcdn.com/mediastore-lms/3/bef121d1705c4175be4c5cb24c85bd1a.jpg" alt="">
+                                    <h4>Kadın Giyimde 2. Ürüne %15 İndirim (Satıcı Karşıla...</h4>
+                                    <h5> Kampanya Tarihleri: </h5>
+                                    <h5> 20 Mart 2023 17:00 / 26 Mart 2023 23:00 </h5>
+                                    <h2 > 26 Mart 2023 00:59 </h2>
+                                    <a href="#">Kampanya Detaylari</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h5>©2023 DSM Grup Danışmanlık İletişim ve Satış Tic. A.Ş. Her hakkı saklıdır.</h5>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            })
+            $('.sub-menu-btn').click(function(){
+                var btn = document.getElementsByClassName("sub-menu");
+                for (let i = 0; i < btn.length; i++) {
+                    const element = btn[i];
+                    console.log(element);
+                    element.classList.remove("visible");
+                }
+                $(this).find('.sub-menu').toggleClass('visible');
+            })
+        })
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
