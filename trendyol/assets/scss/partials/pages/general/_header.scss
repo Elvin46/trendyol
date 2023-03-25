@@ -146,12 +146,35 @@
             height: 40px;
             margin-right: 10px;
         }
+        .notifications-icon{
+            position: relative;
+            margin-right: 16px;
+            &_count{
+                position: absolute;
+                text-align: center;
+                width: 18px;
+                height: 18px;
+                font-size: 10px;
+                top: -3px;
+                right: -6px;
+                color: #fff;
+                border: 2px solid #273142;
+                border-radius: 50%;
+                background-color: #f27a1a;
+                font-weight: 500;
+                line-height: 1.7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+        }
     }
     .menu-btn {
         position: relative;
         justify-content: center;
         align-items: center;
-        width: 40px;
+        // width: 40px;
         height: 40px;
         cursor: pointer;
         transition: all .5s ease-in-out;
@@ -266,6 +289,9 @@
     .main-logo {
       margin-left: 15px;
     }
+    .navbar-top{
+        display: none;
+    }
   }
 @media only screen and (min-width: 992px) {
     .nav-menu {
@@ -318,12 +344,6 @@
             
         }
     }
-    .navbar-top{
-        a{
-            font-size: 8px !important;
-        }
-        
-    }
   }
 @media only screen and (min-width: 682px) {
 .navbar-top{
@@ -333,13 +353,12 @@
 }
 
 .sidebar{
-    border: 1px solid #1F2734;
     background-color: white;
     overflow: hidden;
     position: absolute;
     top: 60px;
     left: 0;
-    width: 290px;
+    width: 100%;
     overflow-y: auto;
     height: 0;
     visibility: hidden;
@@ -350,6 +369,8 @@
         width: 100%;
         .item{
             a{
+                font-size: 18px;
+                font-weight: 600;
                 color: #273142;
                 text-decoration: none;
                 display: block;
@@ -375,6 +396,93 @@
 
                 }
             }
+        }
+    }
+    
+}
+.sidebar_profile{
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    height: 0;
+    visibility: hidden;
+    transition: 0.7s ease-in-out;
+    z-index: 1000;
+    padding: 0;
+    .menu{
+        width: 100%;
+        .item{
+            a{
+                color: #273142;
+                font-weight: 600;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                padding: 5px 30px;
+                line-height: 60px;
+                &:hover{
+                    background-color: #273142;
+                    color: #95A1B5;
+                    transition: 0.3s ease;
+                }
+                .dropdown{
+                    position: absolute;
+                    right: 0;
+                    margin: 20px;
+                    transition: 0.3s ease;
+
+                }
+            }
+            .sub-menu{
+                display: none;
+                a{
+                    padding-left: 80px;
+
+                }
+            }
+        }
+    }
+    .profile-head{
+        margin: 24px 16px;
+        img{
+            border-radius: 100%;
+            margin-right: 16px;
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            color: #273142;
+        }
+        h4{
+            font-size: 20px;
+            color: #95A1B5;
+
+        }
+        a{
+            padding: 2px 10px;
+            background-color: #08b449;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        span{
+            a{
+                padding: 0;
+            background: none !important;
+                font-size: 15px;
+                text-decoration: underline;
+                color: #95A1B5;
+                margin-left: 5px;
+                font-weight: 600;
+            }
+            
         }
     }
     

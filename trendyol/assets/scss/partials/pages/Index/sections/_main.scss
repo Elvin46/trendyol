@@ -214,7 +214,7 @@
             }
         }
         .suggestion-part{
-            margin-bottom: 8px;
+            margin: 25px;
             h4{
                 font-size: 14px;
                 color: #273142;
@@ -260,25 +260,51 @@
         border-radius: 6px;
         img{
             padding: 0 !important;
-        }
-        .slide-pagination{
-            margin: 16px 0;
-            text-align: center;
-            .slide-pagination-bullet{
-                margin: 0 4px;
-                cursor: pointer;
-                background-color: #afbbca;
-                opacity: 1;
-                width: 8px;
-                height: 8px;
-                display: inline-block;
-                border-radius: 100%;
-                &.active{
-                    background-color: #f27a1a;
-                }
-            }
+            height: 184.8px;
         }
         
+        
+    }
+    .slide-pagination{
+        margin: 16px 0;
+        text-align: center;
+        svg{
+            cursor: pointer;
+        }
+        .slide-pagination-bullet{
+            margin: 0 4px;
+            cursor: pointer;
+            background-color: #afbbca;
+            opacity: 1;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            &.active{
+                background-color: #f27a1a;
+            }
+        }
+    }
+    .swiper-pagination{
+        position: relative !important;
+        margin-top: 16px;
+        text-align: center;
+        svg{
+            cursor: pointer;
+        }
+        .swipe-pagination-bullet{
+            margin: 0 4px;
+            cursor: pointer;
+            background-color: #afbbca;
+            opacity: 1;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            &.active{
+                background-color: #f27a1a;
+            }
+        }
     }
     .announcements{
         padding-bottom: 20px;
