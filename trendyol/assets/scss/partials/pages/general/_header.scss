@@ -43,7 +43,7 @@
                 position: relative;
                 cursor: pointer;
                 .navbar-link{
-                    font-size: 12px;
+                    font-size: 14px;
                     text-decoration: none;
                     color: #95A1B5;
                     // margin: 0 15px;
@@ -310,8 +310,8 @@
   }
 
 .navbar-bottom{
-    height: 60px;
     background-color: white;
+    padding: 16px 11px;
     .navbar-bottom-part{
         height: 100%;
         display: flex;
@@ -321,18 +321,37 @@
         }
         a{
             height: 28px;
-            font-size: 12px;
-            line-height: 14px;
-            color: #9B3FC6;
+            font-size: 14px;
+            background: #8C4FFF;
+            background: linear-gradient(to right, #8C4FFF 0%, #5893FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-decoration: none;
             padding: 0 19px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+            border: 1px solid transparent;
             &.left{
-                border-right: 1px solid #9B3FC6;
+                
+                position: relative;
+                margin-right: 10px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: -1px;
+                    width: 1px;
+                    height: 18px;
+                    background: #9B3FC6;
+                }
+            }
+            &:hover{
+            border: 1px solid #8C4FFF;
             }
         }
     }
     .navbar-bottom-left{
-        font-size: 15px;
+        font-size: 20px;
         color: #1F2734;
         font-weight: 500;
     }

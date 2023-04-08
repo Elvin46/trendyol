@@ -21,10 +21,40 @@
             justify-content: center;
             align-items: center;
         }
+        
         h3{
             text-align: center;
         }
         
+    }
+    .dashboard-title{
+        h2{
+            font-size: 64px;
+            color: #273142;
+            font-size: 600;
+        }
+        h3{
+            font-size: 14px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 6px;
+            display: inline;
+        }
+    }
+    .headline{
+        h5{
+            font-size: 18px;
+            
+            color: #273142;
+            &.bold{
+                font-weight: 600;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: #273142;
+
+        }
     }
     
     
@@ -130,6 +160,20 @@
                 }
             }
         }
+
     }
     
+}
+@media only screen and (max-width: 768px){
+    .navbar-bottom-part_last{
+        height: 60px !important;
+    }
+    .products-main{
+        .headline{
+            flex-direction: column;
+            .left-part{
+                flex-direction: column;
+            }
+        }
+    }
 }

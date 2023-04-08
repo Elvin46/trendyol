@@ -308,11 +308,17 @@
     }
     .announcements{
         padding-bottom: 20px;
+        // height: 320px;
+        
         a{
             color: #6e7787;
             &:hover{
                 color: #6e7787;
             }
+        }
+        .announcement-item-list{
+            overflow-x: scroll;
+            height: 80%;
         }
         .announcement-item{
             border-bottom: 1px solid #6e77877c;
@@ -353,6 +359,7 @@
         }
     }
     .offers{
+        
         .offers-heading{
             border-bottom: 1px solid #afbbca;
             padding: 24px;
@@ -377,6 +384,9 @@
             background-color: #f5f5f5;
             padding: 8px;
             border-radius: 6px;
+            width: 240px;
+            margin-right: 20px;
+            margin-bottom: 20px;
             img{
             
             }
@@ -408,6 +418,28 @@
                 }
             }
         }
+        ::-webkit-scrollbar {
+            width: 15px;
+            height: 5px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background: #dbdada; 
+            border-radius: 2px;
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: #273142; 
+            border-radius: 4px;
+            width: 5px;
+          }
+          
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: #273142; 
+          }
     }
 }
 
@@ -415,6 +447,14 @@
     color: #f27a1a !important;
 }
 
+@media only screen and (max-width: 768px) {
+    .suggestions{
+        padding: 0 !important;
+    }
+    .trainings{
+        padding: 0 !important;
+    }
+  }
 @media only screen and (max-width: 682px) {
     .advertise{
         flex-direction: column;

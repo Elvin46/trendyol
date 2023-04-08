@@ -231,7 +231,7 @@
                         <path d="M4 2.5C3.9999 3.19532 4.2069 3.87491 4.59461 4.45211C4.98232 5.0293 5.53317 5.47793 6.17689 5.74078C6.82061 6.00364 7.52804 6.0688 8.20894 5.92796C8.88985 5.78712 9.51338 5.44666 10 4.95V5C10 7.7615 7.7615 10 5 10C2.2385 10 0 7.7615 0 5C0 2.2385 2.2385 0 5 0H5.05C4.71702 0.325563 4.45257 0.714482 4.27224 1.14384C4.09191 1.5732 3.99934 2.03431 4 2.5ZM1 5C0.999637 5.89249 1.29776 6.75946 1.84695 7.46298C2.39613 8.1665 3.16482 8.66614 4.03071 8.88241C4.8966 9.09868 5.80994 9.01916 6.62542 8.65649C7.4409 8.29382 8.11167 7.66885 8.531 6.881C7.78472 7.05682 7.00589 7.03904 6.26841 6.82936C5.53093 6.61968 4.85925 6.22504 4.31711 5.68289C3.77496 5.14075 3.38032 4.46907 3.17064 3.73159C2.96096 2.99411 2.94318 2.21528 3.119 1.469C2.47879 1.81007 1.94339 2.31883 1.57013 2.94082C1.19686 3.56281 0.999788 4.27461 1 5Z" fill="#333333"/>
                         </svg>
                 </div>
-                <div class="navbar-bottom-part d-flex justify-content-between">
+                <div style="overflow-x: auto;" class="navbar-bottom-part navbar-bottom-part_last d-flex justify-content-between">
                     <a class="d-flex align-items-center " href="#">
                         <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.5 16.1111C14.0625 16.1111 15.3908 15.6248 16.485 14.6522C17.5792 13.6796 18.1258 12.4993 18.125 11.1111C18.125 9.72222 17.5779 8.54148 16.4837 7.56889C15.3896 6.5963 14.0617 6.11037 12.5 6.11111C10.9375 6.11111 9.60917 6.59741 8.515 7.57C7.42083 8.54259 6.87417 9.72296 6.875 11.1111C6.875 12.5 7.42208 13.6807 8.51625 14.6533C9.61042 15.6259 10.9383 16.1119 12.5 16.1111ZM2.5 20C1.8125 20 1.22375 19.7822 0.733752 19.3467C0.243752 18.9111 -0.000831211 18.3881 2.12224e-06 17.7778V4.44444C2.12224e-06 3.83333 0.245002 3.31 0.735002 2.87444C1.225 2.43889 1.81334 2.22148 2.5 2.22222H6.4375L8.75 0H16.25L18.5625 2.22222H22.5C23.1875 2.22222 23.7762 2.44 24.2662 2.87556C24.7562 3.31111 25.0008 3.83407 25 4.44444V17.7778C25 18.3889 24.755 18.9122 24.265 19.3478C23.775 19.7833 23.1867 20.0007 22.5 20H2.5Z" fill="#333333"/>
@@ -268,12 +268,23 @@
     </header>
     <main>
         <section id="dashboard">
-            <div class="custom-container">
+            <div class="custom-container-fluid">
                 <div class="row">
-                    <div class="col-md-5 col-sm-12">Empty(Qrafika)</div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="my-3 dashboard-title">
+                            <div class="headline d-flex justify-content-between">
+                                <h5 class="bold">Bugünkü Net Cirom</h5>
+                                <p>Son Güncelleme: 09 Nisan 2023 01:20:50</p>
+                            </div>
+                            <h2>3.126 ₺</h2>
+                            <h3>Dünkü Net Cirom:13.473 ₺</h3>
+                        </div>
+                        <div id="chartContainer" style="height: 176px; width: 100%;">
+                        </div>
+                    </div>
                     <div class="col-md-7 col-sm-12">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <div class="dashboard-card">
                                     <div class="heading">
                                         <svg style="margin-left: 0;" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,7 +317,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <div class="dashboard-card">
                                     <div class="heading">
                                         <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -339,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <div class="dashboard-card">
                                     <div class="heading">
                                         <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -372,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <div class="dashboard-card">
                                     <div class="heading">
                                         <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -514,6 +525,8 @@
         })
     </script>
     <script src="./js/index.js"></script>
+    <script src="./js/chart.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
