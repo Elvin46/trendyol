@@ -358,16 +358,25 @@
 }
 @media only screen and (max-width: 400px) {
     .navbar-bottom-part{
+        
         a{
             padding: 0 9px !important;
-            
         }
+
+    }
+  }
+  @media only screen and (max-width: 667px) {
+    .navbar-bottom-part{
+        
+        a{
+            height: 60px !important;
+        }
+
     }
   }
 @media only screen and (min-width: 682px) {
 .navbar-top{
     height: 30px;
-    
 }
 }
 

@@ -496,20 +496,6 @@
     </footer>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.sub-btn').click(function(){
-                $('.sub-menu').slideUp();
-                $(this).next('.sub-menu').slideToggle();
-                $(this).find('.dropdown').toggleClass('rotate');
-            })
-            $('.sub-menu-btn').click(function(){
-                var btn = document.getElementsByClassName("sub-menu");
-                for (let i = 0; i < btn.length; i++) {
-                    const element = btn[i];
-                    console.log(element);
-                    element.classList.remove("visible");
-                }
-                $(this).find('.sub-menu').toggleClass('visible');
-            })
             var slider = $(".carousel-inner") 
             .carousel('cycle') 
             .bind('slid.bs.carousel', function() { 

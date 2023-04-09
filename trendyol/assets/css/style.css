@@ -326,6 +326,11 @@
     padding: 0 9px !important;
   }
 }
+@media only screen and (max-width: 667px) {
+  .navbar-bottom-part a {
+    height: 60px !important;
+  }
+}
 @media only screen and (min-width: 682px) {
   .navbar-top {
     height: 30px;
@@ -1012,12 +1017,6 @@ p {
 @media only screen and (max-width: 750px) {
   #past-applications .applications-table {
     display: none;
-  }
-  #past-applications .applications-table1 {
-    display: block;
-  }
-  #past-applications .applications-table2 {
-    display: block;
   }
   #past-applications .sub-amount div {
     align-items: center;
@@ -2196,9 +2195,12 @@ p {
   width: 40px;
   margin-left: 15px;
   height: 38px;
-  padding: 7px;
+  padding: 10px;
   background-color: #afbbca;
   font-size: 30px;
+}
+#Filter .filter-part .filtering-btn .close img {
+  width: 20px;
 }
 
 @media only screen and (max-width: 992px) {
