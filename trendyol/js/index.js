@@ -32,7 +32,12 @@ $('.sub-menu-btn').click(function(ev){
 $(document).click(function() {
   $(this).find('.sub-menu').removeClass('visible');
 });
-
+$('.moda-vitrini').click(function(ev){
+  console.log("salam");
+  $(".moda-vitrini-menu").toggleClass('visible');
+  $(".moda-vitrini-menu").toggleClass('d-none');
+  ev.stopPropagation();
+})
 const profileBtn = document.querySelector('.my-profile');
 let profileOpen = false;
 profileBtn.addEventListener('click', () => {
