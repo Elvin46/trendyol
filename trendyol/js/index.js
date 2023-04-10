@@ -21,14 +21,16 @@ $(document).ready(function(){
   })
 })
 //NAVBAR COLLAPSE
-$('.sub-menu-btn').click(function(){
+var openedMenu;
+$('.sub-menu-btn').click(function(ev){
   var btn = document.getElementsByClassName("sub-menu");
   $('.sub-menu').removeClass("visible");
   $(this).find('.sub-menu').toggleClass('visible');
+  openedMenu = $(this).find('.sub-menu');
+  ev.stopPropagation();
 })
 $(document).click(function() {
-  $(".sub-menu").slideUp();
-  console.log("salam");
+  $(this).find('.sub-menu').removeClass('visible');
 });
 
 const profileBtn = document.querySelector('.my-profile');
